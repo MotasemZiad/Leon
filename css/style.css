@@ -37,6 +37,33 @@ body {
   }
 }
 
+.special-heading {
+  color: #ebeced;
+  font-size: 128px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -6px;
+  margin: 0;
+}
+
+.special-heading + p {
+  margin: -36px 0 0;
+  color: #787878;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 64px;
+  }
+
+  .special-heading + p {
+    margin-top: -24px;
+    letter-spacing: -2px;
+  }
+}
+
 .header {
   padding: 20px;
 }
@@ -89,7 +116,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
   position: absolute;
   right: 0;
   top: calc(100% + 20px);
@@ -107,7 +134,7 @@ body {
   content: "";
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent #f2f2f2 transparent;
+  border-color: transparent transparent #f8f8f8 transparent;
   position: absolute;
   top: -20px;
   right: 5px;
@@ -157,19 +184,59 @@ body {
 }
 
 .features {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #f8f8f8;
 }
 
 .features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.features .container .feature {
+.features .feature {
+  padding: 20px;
+  text-align: center;
 }
 
-.features .container .feature i {
+.features .feature i {
+  color: var(--primary-color);
 }
 
-.features .container .feature h3 {
+.features .feature h3 {
+  font-weight: 800;
+  margin: 16px 0;
 }
 
-.features .container .feature p {
+.features .feature p {
+  line-height: 1.8;
+  color: #787878;
+}
+
+.services {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.services .container {
+}
+
+.services .col {
+}
+
+.services .service {
+}
+
+.services .service i {
+  color: var(--primary-color);
+}
+
+.services .service .text {
+}
+
+.services .text h3 {
+}
+
+.services .text p {
 }
