@@ -1,4 +1,5 @@
 :root {
+  --primary-color: #10cab7;
 }
 
 * {
@@ -95,6 +96,7 @@ body {
   min-width: 200px;
   border-radius: 8px;
   display: none;
+  z-index: 1;
 }
 
 .header .links:hover ul {
@@ -128,5 +130,46 @@ body {
 }
 
 .landing {
-  background-image: url(../assets/images/);
+  background-image: url(../assets/images/landing-2.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+.landing .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.landing .intro-text h1 {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 48px;
+}
+
+.landing .intro-text p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.features {
+}
+
+.features .container {
+}
+
+.features .container .feature {
+}
+
+.features .container .feature i {
+}
+
+.features .container .feature h3 {
+}
+
+.features .container .feature p {
 }
