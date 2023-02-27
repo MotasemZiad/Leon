@@ -398,6 +398,7 @@ body {
 
 @media screen and (max-width: 991px) {
   .about .about-content .image {
+    margin: 0 auto 64px;
   }
 
   .about .about-content .image::before,
@@ -426,4 +427,13 @@ body {
   line-height: var(--line-height);
   margin-bottom: 50px;
   color: var(--light-grey-color);
+}
+
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background-color);
+}
+
+.contact .contact-content {
 }
