@@ -1,5 +1,6 @@
 :root {
   --primary-color: #10cab7;
+  --secondary-color: #2c4755;
 }
 
 * {
@@ -219,13 +220,23 @@ body {
   padding-bottom: 64px;
 }
 
-.services .container {
+.services .services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 96px;
 }
 
-.services .col {
+.services .services-content .service {
+  display: flex;
+  margin-bottom: 40px;
 }
 
-.services .service {
+@media screen and (max-width: 767px) {
+  .services .services-content .service {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .services .service i {
@@ -233,10 +244,42 @@ body {
 }
 
 .services .service .text {
+  flex: 1;
+  margin-left: 16px;
 }
 
-.services .text h3 {
+.services .service .text h3 {
+  margin: 0;
 }
 
-.services .text p {
+.services .service .text p {
+  color: #333333;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.services .image {
+  text-align: center;
+  position: relative;
+}
+
+.services .image::after {
+  content: "";
+  background-color: var(--secondary-color);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 100px;
+  height: calc(100% + 100px);
+  z-index: -1;
+}
+
+.services .image img {
+  width: 260px;
+}
+
+@media screen and (max-width: 1199px) {
+  .services .image {
+    display: none;
+  }
 }
