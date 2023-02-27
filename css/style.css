@@ -1,6 +1,7 @@
 :root {
   --primary-color: #10cab7;
   --secondary-color: #2c4755;
+  --border-radius: 12px;
 }
 
 * {
@@ -122,7 +123,7 @@ body {
   right: 0;
   top: calc(100% + 20px);
   min-width: 200px;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   display: none;
   z-index: 1;
 }
@@ -237,6 +238,10 @@ body {
     flex-direction: column;
     text-align: center;
   }
+
+  .services .service i {
+    margin-bottom: 16px;
+  }
 }
 
 .services .service i {
@@ -271,11 +276,13 @@ body {
   top: -50px;
   width: 100px;
   height: calc(100% + 100px);
+  border-radius: var(--border-radius);
   z-index: -1;
 }
 
 .services .image img {
   width: 260px;
+  border-radius: var(--border-radius);
 }
 
 @media screen and (max-width: 1199px) {
