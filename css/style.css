@@ -316,6 +316,7 @@ body {
 .portfolio .portfolio-content .card {
   background-color: white;
   border-radius: var(--border-radius);
+  box-shadow: 2px 2px 5px lightgrey;
 }
 .portfolio .portfolio-content .card img {
   max-width: 100%;
