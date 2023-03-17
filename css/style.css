@@ -133,7 +133,6 @@ body {
   right: 0;
   top: calc(100% + 20px);
   min-width: 200px;
-  border-radius: var(--border-radius);
   display: none;
   z-index: 1;
 }
