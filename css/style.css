@@ -286,7 +286,6 @@ body {
   top: -50px;
   width: 100px;
   height: calc(100% + 100px);
-  border-radius: var(--border-radius);
   z-index: -1;
 }
 
@@ -385,7 +384,6 @@ body {
   height: calc(100% + 80px);
   background-color: #ebeced;
   z-index: -1;
-  border-radius: var(--border-radius);
 }
 
 .about .about-content .image::after {
@@ -398,7 +396,6 @@ body {
   border-left: 80px solid var(--primary-color);
   border-bottom: 80px solid var(--primary-color);
   z-index: -1;
-  border-radius: var(--border-radius);
 }
 
 @media screen and (max-width: 991px) {
